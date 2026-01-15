@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.advice-container {
+  background-color: hsl(217, 19%, 24%);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  max-width: 500px;
+}
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 1rem;
+  font-size: 28px;
+}
+.advice-txt {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+/* .pattern-divider {
+  background-image: url("images/pattern-divider-desktop.svg");
+} */
+.pattern-divider {
+  margin-bottom: 2rem;
+}
+.dice {
+  background-color: hsl(150, 100%, 66%);
+  padding: 1rem;
+  position: absolute;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.dice:hover {
+  box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+/* creatig the mobile view of the advice generator app */
+@media (max-width: 375px) {
+  .advice-container {
+    padding: 1rem;
+    width: 300px;
+     
+  }
+  .pattern-divider{
+    background: url('images/pattern-divider-mobile.svg');
+  }
+}
+/* creatig the desctop view of the advice generator app */
+@media (max-width: 1440px) {
+  .advice-container {
+    width: 480px;
+  }
+  .pattern-divider{
+    background: url('images/pattern-divider-desktop.svg');
+  }
+}
