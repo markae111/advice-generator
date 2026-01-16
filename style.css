@@ -18,7 +18,7 @@ body {
   padding: 1.5rem;
   border-radius: 1rem;
   position: relative;
-  max-width: 500px;
+  width: 100%;
 }
 .advice-id {
   color: hsl(150, 100%, 66%);
@@ -35,6 +35,8 @@ body {
 } */
 .pattern-divider {
   margin-bottom: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 .dice {
   background-color: hsl(150, 100%, 66%);
@@ -49,22 +51,30 @@ body {
   box-shadow: 0 0 30px hsl(150, 100%, 66%);
 }
 /* creatig the mobile view of the advice generator app */
-@media (max-width: 375px) {
-  .advice-container {
-    padding: 1rem;
-    width: 300px;
-     
-  }
-  .pattern-divider{
-    background: url('images/pattern-divider-mobile.svg');
-  }
-}
 /* creatig the desctop view of the advice generator app */
 @media (max-width: 1440px) {
   .advice-container {
     width: 480px;
   }
-  .pattern-divider{
-    background: url('images/pattern-divider-desktop.svg');
+  .pattern-divider {
+    background: url("images/pattern-divider-desktop.svg");
+  }
+}
+@media (max-width: 6000px) {
+  .advice-container {
+    width: 400px;
+  }
+  .pattern-divider {
+    background: url("images/pattern-divider-mobile.svg");
+    margin-left: 2.01rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .advice-container {
+    width: 340px;
+  }
+  .pattern-divider {
+    background: url("images/pattern-divider-mobile.svg");
   }
 }
