@@ -60,9 +60,9 @@ body {
     background: url("images/pattern-divider-desktop.svg");
   }
 }
-@media (max-width: 6000px) {
+@media (max-width: 600px) {
   .advice-container {
-    width: 400px;
+    width: 375px;
   }
   .pattern-divider {
     background: url("images/pattern-divider-mobile.svg");
